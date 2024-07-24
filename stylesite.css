@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Zain:wght@200;300;400;700;800;900&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff69b446;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    border-radius: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: #ff69b4;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.story, .thank-you {
+    text-align: center;
+    font-family: "Zain", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    margin: 15px;
+}
+
+.photos {
+    text-align: center;
+}
+
+.carousel {
+    position: relative;
+    width: 100%; /* Define a largura do carrossel */
+    max-width: 500px; /* Define a largura máxima do carrossel */
+    height: 500px; /* Define a altura do carrossel */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Garante que as imagens se ajustem à largura do carrossel */
+}
+
+.carousel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ajusta a imagem para preencher o contêiner sem distorção */
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #888;
+}
